@@ -1,0 +1,25 @@
+### WordPress ###
+/wordpress/src/wp/
+/wordpress/src/content/plugins/
+/wordpress/src/content/uploads/
+/wordpress/src/content/languages/
+/wordpress/src/content/themes/*
+!/wordpress/src/content/themes/child-theme/
+/wordpress/src/content/themes/child-theme/html/
+/wordpress/src/content/themes/child-theme/assets/
+/wordpress/src/content/themes/child-theme/abovethefold/
+
+### Composer ###
+composer.phar
+/wordpress/src/vendor/
+
+### Node Package Modules ###
+**/node_modules/
+
+### CSS Pre-Processor ###
+**/.sass-cache/
+
+### MySQL ###
+/data/
+
+*.pid

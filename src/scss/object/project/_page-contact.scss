@@ -1,0 +1,799 @@
+@charset "utf-8";
+
+/* contact
+------------------------------------------------ */
+
+#page-inner.contact {
+  > p {
+    color: #101010;
+    font-size: 15px;
+    line-height: 34px;
+
+    margin-bottom: 35px;
+  }
+
+  /* kiyaku */
+  #contact-wrap {
+    .kiyaku-box {
+      margin: 0;
+      height: 300px;
+      padding: 25px 40px 15px 30px;
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .02) inset;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+
+      margin-bottom: 50px;
+    }
+
+    .kiyaku-box p {
+      color: #101010;
+      font-size: 14px;
+      line-height: 30px;
+
+      margin-bottom: 20px;
+    }
+
+    .kiyaku-box h2 {
+      color: #101010;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: bold;
+
+      margin-bottom: 0;
+    }
+
+    .kiyaku-box ul {
+      margin-bottom: 20px;
+    }
+
+    .kiyaku-box p + ul {
+      margin-top: -20px;
+    }
+
+    .kiyaku-box ul li {
+      color: #101010;
+      font-size: 14px;
+      line-height: 26px;
+      margin-bottom: 4px;
+    }
+
+    .kiyaku-box ul li {
+      list-style-type: none;
+      list-style-position: inside;
+      counter-increment: cnt;
+      margin-left: 28px;
+    }
+
+    .kiyaku-box ul li:before {
+      display: marker;
+      content: "(" counter(cnt) ")";
+      margin-left: -26px;
+      padding-right: 8px;
+    }
+
+    .doui-btn {
+      max-width: 286px;
+      margin: 0 auto;
+    }
+
+    .doui-btn span {
+      cursor: pointer;
+
+      box-sizing: border-box;
+      display: block;
+      text-align: center;
+
+      color: #fff;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+
+      background-color: #303030;
+
+      padding: 23px 30px 21px;
+    }
+  }
+
+  /* form */
+  #contact-wrap {
+    .hbspt-form-wrap {
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 0 0 1px rgba(232, 232, 232, 1);
+
+      padding: 50px 90px;
+    }
+
+    p.hissu-txt {
+      color: #101010;
+      font-size: 13px;
+      line-height: 22px;
+      font-weight: bold;
+
+      margin-bottom: 30px;
+    }
+  }
+}
+
+body.en #page-inner.contact {
+  > p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  /* kiyaku */
+  #contact-wrap {
+    .kiyaku-box p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+
+      font-size: 16px;
+    }
+
+    .kiyaku-box h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+
+      font-size: 16px;
+    }
+
+    .kiyaku-box ul li {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+
+      font-size: 16px;
+    }
+
+    .doui-btn span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+
+      font-size: 19px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    a,
+    a:visited {
+      color: #0075d0;
+    }
+  }
+
+  /* form */
+  #contact-wrap {
+    p.hissu-txt {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #page-inner.contact {
+    #contact-wrap {
+      .doui-btn span {
+        transition: background-color .2s;
+      }
+
+      .doui-btn span:hover {
+        background-color: #514f50;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #page-inner.contact {
+    /* form */
+    #contact-wrap {
+      .hbspt-form-wrap {
+        padding: 50px 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #page-inner.contact {
+    /* form */
+    #contact-wrap {
+      .hbspt-form-wrap {
+        padding: 40px 50px 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #page-inner.contact {
+    > p {
+      font-size: 14px;
+      line-height: 30px;
+
+      margin-bottom: 25px;
+
+      padding: 0 10px;
+    }
+
+    /* kiyaku */
+    #contact-wrap {
+      .kiyaku-box {
+        height: 250px;
+        padding: 20px 30px 10px 20px;
+        margin-bottom: 40px;
+      }
+
+      .kiyaku-box p {
+        font-size: 13px;
+        line-height: 28px;
+        margin-bottom: 16px;
+      }
+
+      .kiyaku-box h2 {
+        font-size: 13px;
+        line-height: 28px;
+
+        margin-bottom: 0;
+      }
+
+      .kiyaku-box ul {
+        margin-bottom: 15px;
+      }
+
+      .kiyaku-box p + ul {
+        margin-top: -10px;
+      }
+
+      .kiyaku-box ul li {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 4px;
+      }
+
+      .kiyaku-box ul li {
+        margin-left: 26px;
+      }
+
+      .kiyaku-box ul li:before {
+        margin-left: -24px;
+        padding-right: 6px;
+      }
+
+      .doui-btn {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+
+      .doui-btn span {
+        font-size: 16px;
+        line-height: 20px;
+
+        padding: 20px 25px 18px;
+      }
+    }
+
+    /* form */
+    #contact-wrap {
+      .hbspt-form-wrap {
+        padding: 35px 35px 40px;
+      }
+
+      p.hissu-txt {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  body.en #page-inner.contact {
+    > p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    /* kiyaku */
+    #contact-wrap {
+      .kiyaku-box p {
+        font-size: 15px;
+      }
+
+      .kiyaku-box h2 {
+        font-size: 15px;
+      }
+
+      .kiyaku-box ul li {
+        font-size: 15px;
+      }
+
+      .doui-btn span {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #page-inner.contact {
+    > p {
+      font-size: 13px;
+      line-height: 28px;
+
+      margin-bottom: 20px;
+
+      padding: 0 5px;
+    }
+
+    /* kiyaku */
+    #contact-wrap {
+      .kiyaku-box {
+        height: 240px;
+        padding: 20px 10px 10px 22px;
+
+        margin-bottom: 35px;
+      }
+    }
+
+    /* form */
+    #contact-wrap {
+      .hbspt-form-wrap {
+        padding: 30px;
+      }
+
+      p.hissu-txt {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  body.en #page-inner.contact {
+    > p {
+      font-size: 15px;
+      line-height: 28px;
+    }
+
+    /* kiyaku */
+    #contact-wrap {
+      .kiyaku-box p {
+        font-size: 14px;
+      }
+
+      .kiyaku-box h2 {
+        font-size: 14px;
+      }
+
+      .kiyaku-box ul li {
+        font-size: 14px;
+      }
+
+      .doui-btn span {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #page-inner.contact {
+    > p {
+      font-size: 13px;
+      line-height: 23px;
+
+      margin-bottom: 16px;
+
+      padding: 0 10px;
+    }
+
+    /* kiyaku */
+    #contact-wrap {
+      .kiyaku-box {
+        height: 220px;
+        padding: 15px 10px 10px 20px;
+
+        margin-bottom: 25px;
+      }
+
+      .kiyaku-box p {
+        font-size: 12px;
+        line-height: 24px;
+
+        margin-bottom: 14px;
+      }
+
+      .kiyaku-box h2 {
+        font-size: 13px;
+        line-height: 24px;
+
+        margin-bottom: 0;
+      }
+
+      .kiyaku-box ul {
+        margin-bottom: 14px;
+      }
+
+      .kiyaku-box p + ul {
+        margin-top: -5px;
+      }
+
+      .kiyaku-box ul li {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 4px;
+      }
+
+      .kiyaku-box ul li {
+        margin-left: 23px;
+      }
+
+      .kiyaku-box ul li:before {
+        margin-left: -23px;
+        padding-right: 6px;
+      }
+
+      .doui-btn {
+        max-width: 220px;
+        margin: 0 auto;
+      }
+
+      .doui-btn span {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 18px 25px 16px;
+      }
+    }
+
+    /* form */
+    #contact-wrap {
+      .hbspt-form-wrap {
+        padding: 25px 20px;
+      }
+
+      p.hissu-txt {
+        font-size: 12px;
+        line-height: 20px;
+
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  body.en #page-inner.contact {
+    > p {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    /* kiyaku */
+    #contact-wrap {
+      .kiyaku-box p {
+        font-size: 13px;
+      }
+
+      .kiyaku-box h2 {
+        font-size: 13px;
+      }
+
+      .kiyaku-box ul li {
+        font-size: 13px;
+      }
+
+      .doui-btn span {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------
+  mautic form style
+------------------------------------------------------------ */
+.mauticform_wrapper {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  font-family: 'Poppins', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif !important;
+  color: #101010 !important;
+}
+
+.mauticform-helpmessage {
+  display: block;
+  // font-size: 0.9em;
+  // margin-bottom: 3px;
+
+  color: #a1a1a1 !important;
+  font-size: 12px !important;
+  line-height: 20px;
+  padding-left: 3px;
+  font-weight: normal !important;
+  padding-top: 4px;
+  margin-bottom: 0 !important;
+}
+
+#contact-wrap textarea,
+#contact-wrap input[type="text"],
+#contact-wrap input[type="password"],
+#contact-wrap input[type="datetime"],
+#contact-wrap input[type="datetime-local"],
+#contact-wrap input[type="date"],
+#contact-wrap input[type="month"],
+#contact-wrap input[type="time"],
+#contact-wrap input[type="week"],
+#contact-wrap input[type="number"],
+#contact-wrap input[type="email"],
+#contact-wrap input[type="url"],
+#contact-wrap input[type="search"],
+#contact-wrap input[type="tel"],
+#contact-wrap input[type="color"],
+#contact-wrap .uneditable-input {
+  background-color: #f9fafa !important;
+  font-size: 14px;
+}
+
+#contact-wrap .mauticform_wrapper select {
+  height: 42px;
+  font-size: 14px;
+}
+
+#contact-wrap .mauticform_wrapper textarea {
+  height: auto !important;
+  min-height: 200px;
+  resize: vertical;
+}
+
+#contact-wrap .mauticform-button-wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 10px 0 20px;
+
+  input,
+  button {
+    display: inline-block !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 700 !important;
+    padding: 23px 30px 21px !important;
+    background-color: #303030 !important;
+    border: 0 !important;
+    width: 100% !important;
+    text-decoration: none !important;
+    font-style: normal !important;
+    box-sizing: border-box !important;
+    border-radius: 0 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #contact-wrap .mauticform-button-wrapper {
+    input,
+    button {
+      transition: opacity .2s;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mauticform-helpmessage {
+    padding-top: 2px;
+  }
+
+  #contact-wrap .mauticform-button-wrapper {
+    input,
+    button {
+      font-size: 15px !important;
+      line-height: 20px !important;
+      padding: 18px 25px 16px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #contact-wrap .mauticform-button-wrapper {
+    max-width: 100%;
+    padding: 0 0 10px;
+  }
+}
+
+/* forrm-thanx
+----------------------------------------- */
+#page-inner.contact {
+  #contact-wrap.contact-thanks {
+    color: #101010;
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 22px;
+    }
+
+    h3 {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 24px;
+      // font-weight: bold;
+
+      margin-left: -4px;
+    }
+
+    > p {
+      font-size: 14px;
+      line-height: 30px;
+
+      margin-bottom: 30px;
+    }
+
+    .thanks-hvc {
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: bold;
+
+      margin-bottom: 4px;
+    }
+
+    .thanks-hvc p {
+      font-size: 13px;
+      line-height: 24px;
+
+      a,
+      a:visited {
+        color: #0075d0;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+body.en #page-inner.contact {
+  #contact-wrap.contact-thanks {
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+
+      margin-left: -2px;
+    }
+
+    > p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+
+    .thanks-hvc p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #page-inner.contact {
+    #contact-wrap.contact-thanks {
+      padding: 0 30px;
+
+      h3 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #page-inner.contact {
+    #contact-wrap.contact-thanks {
+      padding: 15px 30px;
+
+      h3 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 20px;
+      }
+
+      > p {
+        font-size: 14px;
+        line-height: 28px;
+      }
+
+      > p {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #page-inner.contact {
+    #contact-wrap.contact-thanks {
+      padding: 0 10px;
+
+      h2 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 16px;
+
+        margin-left: -2px;
+      }
+
+      > p {
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #page-inner.contact {
+    #contact-wrap.contact-thanks {
+      padding: 5px 15px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 14px;
+      }
+
+      h3 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 14px;
+
+        margin-left: -2px;
+      }
+
+      h4 {
+        font-size: 12px;
+        line-height: 22px;
+
+        margin-bottom: 4px;
+      }
+
+      .thanks-hvc p {
+        font-size: 12px;
+        line-height: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* cassette
+cassetteのスタイルを記述してください
+Please write css for cassette in sidebar
+------------------------ */
+
+@mixin placeholderColor($color) {
+  &:placeholder-shown {
+    color: #fff;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+.side-bar {
+  text-align: center;
+  width: 250px;
+
+  .cassette {
+    margin-bottom: 40px;
+  }
+}
+
+.cassette {
+  > h2 {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    color: #111;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: .04em;
+
+    border-bottom: 1px solid #cfcfcf;
+
+    padding-bottom: 14px;
+    margin-bottom: 0;
+  }
+
+  &.cst-search,
+  &.cst-category {
+    > h2 {
+      display: none;
+    }
+  }
+
+  /* keyword
+  --------------------------------- */
+
+  &.cst-keyword > ul,
+  &.cst-archive > ul {
+    text-align: center;
+
+    li a {
+      position: relative;
+      display: block;
+
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+
+      color: #111;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: .04em;
+
+      background-color: #fff;
+      border-bottom: 1px solid #cfcfcf;
+
+      padding: 20px 15px 18px;
+
+      transition: background-color .2s;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #f4f4f4;
+      }
+    }
+  }
+
+  /* category
+  --------------------------------- */
+
+  &.cst-category > ul {
+    text-align: center;
+
+    li {
+      margin-bottom: 18px;
+    }
+
+    li a {
+      position: relative;
+      display: block;
+
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+
+      color: #111;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: .02em;
+
+      background-color: #fff;
+      border: 1px solid #545454;
+
+      padding: 20px 15px 18px;
+
+      transition: background-color .2s;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #f4f4f4;
+      }
+    }
+  }
+
+  /* search
+  --------------------------------- */
+
+  &.cst-search {
+    .search-input-text {
+      display: block;
+      position: relative;
+    }
+
+    input[type="text"] {
+      box-sizing: border-box;
+      width: 100%;
+      height: 49px;
+
+      color: #111;
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: normal;
+
+      padding: 0 20px 0 40px;
+
+      position: relative;
+      background-color: #f6f6f6;
+      border: 1px solid #e0e0e0;
+
+      border-radius: 0;
+
+      @include placeholderColor(#ccc);
+    }
+
+    .search-input-text:after {
+      content: ",";
+      font-family: 'web_icon_fontsregular';
+      color: #adadad;
+      font-size: 19px;
+      font-weight: normal;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 10;
+    }
+
+    input[type="text"]:focus {
+      background-color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .side-bar {
+    width: 200px;
+  }
+}

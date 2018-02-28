@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* android4 対応
+------------------------------------------------- */
+
+body.and {
+  #bst-wrap {
+    display: block;
+  }
+
+  .list-blog-cal .inner {
+    display: block;
+
+    &:after {
+      height: 0;
+      visibility: hidden;
+      content: '.';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .list-blog-bloc {
+    float: left;
+
+    margin-left: 3%;
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+
+  .list-news-bloc,
+  .top-news-bloc {
+    a {
+      display: table;
+      width: 100%;
+    }
+
+    .img-box,
+    .txt-box {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .img-box {
+      height: 100px;
+    }
+  }
+
+  #contents .content {
+    display: block;
+  }
+
+  .page-foot-member .foot-member {
+    display: block;
+  }
+
+  #nav-menu.open {
+    display: table;
+    width: 100%;
+  }
+
+  #hvc-wrap.top #nav-menu ul,
+  #hvc-wrap.top > header.scr #nav-menu ul,
+  #nav-menu ul {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

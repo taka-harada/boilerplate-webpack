@@ -1,0 +1,70 @@
+// web fontsのインポートをします
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+// normalize.cssのインポートをします
+@import '../../node_modules/normalize.css/normalize.css';
+
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
+/*
+base.................要素セレクタと属性セレクタのデフォルトスタイルです。
+init...............
+------------------------ */
+@import 'foundation/base';
+@import 'foundation/init';
+
+/* ==========================================================================
+   layout
+   ========================================================================== */
+/*
+layout.................
+header...............ヘッダーエリアのコンテナブロックのスタイルを指定します。
+footer...............フッターエリアのコンテナブロックのスタイルを指定します。
+sidebar..............サイドバーエリアのコンテナブロックのスタイルを指定します。
+------------------------ */
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+
+/* ==========================================================================
+   object
+   ========================================================================== */
+/* component
+card.................カードエリアのコンテナブロックのスタイルを指定します。
+cassette...............サイドバーのcassetteエリアのコンテナブロックのスタイルを指定します。
+loading...............ローディングのコンテナブロックのスタイルを指定します。
+share-btn..............シェアボタンのコンテナブロックのスタイルを指定します。
+nav..............ナビゲーションのコンテナブロックのスタイルを指定します。
+------------------------ */
+@import 'object/component/card';
+@import 'object/component/cassette';
+@import 'object/component/loading';
+@import 'object/component/share-btn';
+@import 'object/component/nav';
+
+/* project
+slider.................スライダーのコンテナブロックのスタイルを指定します。
+page-title...............ページタイトルエリアのコンテナブロックのスタイルを指定します。
+top...............トップページのスタイルを指定します。
+single..............記事詳細ページのコンテナブロックのスタイルを指定します。
+post..............固定ページのコンテナブロックのスタイルを指定します。
+page-service..............serviceページのスタイルを指定します。
+page-company..............companyページのスタイルを指定します。
+page-contact..............contactページのスタイルを指定します。
+page-kiyaku..............kiyakuページのスタイルを指定します。
+page-notfound..............notfoundページのスタイルを指定します。
+page-dependant-browser..............ブラウザ間の依存関係を解決するためのスタイルを指定します。
+------------------------ */
+@import 'object/project/slider';
+@import 'object/project/page-title';
+@import 'object/project/top';
+@import 'object/project/single';
+@import 'object/project/post';
+@import 'object/project/page-service';
+@import 'object/project/page-company';
+@import 'object/project/page-contact';
+@import 'object/project/page-kiyaku';
+@import 'object/project/notfound';
+@import 'object/project/dependant-browser';

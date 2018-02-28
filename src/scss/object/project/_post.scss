@@ -1,0 +1,720 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------
+	hvc 2017 post style
+------------------------------------------------------------ */
+
+$h2HeadColor: #101010;
+$postLinkColor: #0075d0;
+$h3HeadColor: #101010;
+
+/* ----- 記事中 ----- */
+
+#post-inner .article-content p {
+  color: #101010;
+  font-size: 15px;
+  line-height: 34px;
+  padding-bottom: 20px;
+}
+
+body.en #post-inner {
+  font-family: 'Poppins', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif !important;
+}
+
+body.en #post-inner .article-content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#post-inner .article-content {
+  > table {
+    color: #101010;
+    width: 100%;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td,
+    th {
+      padding: 5px 5px 5px 10px;
+      font-size: 15px;
+      line-height: 28px;
+    }
+
+    td:first-child {
+      padding: 5px 5px 5px 0;
+    }
+  }
+}
+
+#post-inner .article-content b,
+#post-inner .article-content strong {
+  font-weight: bold;
+}
+
+body.en #post-inner .article-content b,
+body.en #post-inner .article-content strong {
+  font-weight: 600;
+}
+
+#post-inner .article-content blockquote > h2,
+#post-inner .article-content > h2 {
+  font-weight: bold;
+  color: #101010;
+  font-size: 22px;
+  line-height: 36px;
+
+  border-left: 3px solid $h2HeadColor;
+  padding: 4px 10px 4px 18px;
+
+  margin-bottom: 26px;
+}
+
+body.en #post-inner .article-content blockquote > h2,
+body.en #post-inner .article-content > h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#post-inner .article-content blockquote > h3,
+#post-inner .article-content > h3 {
+  font-weight: bold;
+  color: #101010;
+  font-size: 20px;
+  line-height: 30px;
+
+  border-left: 3px solid $h3HeadColor;
+
+  padding: 4px 10px 4px 18px;
+
+  margin-bottom: 24px;
+}
+
+body.en #post-inner .article-content blockquote > h3,
+body.en #post-inner .article-content > h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#post-inner .article-content blockquote > h4,
+#post-inner .article-content > h4 {
+  font-weight: bold;
+  color: #101010;
+  font-size: 19px;
+  line-height: 30px;
+
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+body.en #post-inner .article-content blockquote > h4,
+body.en #post-inner .article-content > h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#post-inner .article-content blockquote > h5,
+#post-inner .article-content > h5 {
+  font-weight: bold;
+  color: #101010;
+  font-size: 18px;
+  line-height: 28px;
+
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+body.en #post-inner .article-content blockquote > h5,
+body.en #post-inner .article-content > h5 {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+#post-inner .article-content blockquote > h6,
+#post-inner .article-content > h6 {
+  font-weight: bold;
+  color: #101010;
+  font-size: 16px;
+  line-height: 26px;
+
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+body.en #post-inner .article-content blockquote > h6,
+body.en #post-inner .article-content > h6 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#post-inner .article-content > table + h2,
+#post-inner .article-content > table + h3,
+#post-inner .article-content > table + h4,
+#post-inner .article-content > table + h5,
+#post-inner .article-content > table + h6,
+#post-inner .article-content > p + h2,
+#post-inner .article-content > p + h3,
+#post-inner .article-content > p + h4,
+#post-inner .article-content > p + h5,
+#post-inner .article-content > p + h6 {
+  margin-top: 20px;
+}
+
+#post-inner .article-content > p + p img {
+  margin-top: 10px;
+}
+
+/* -----リンク----- */
+#post-inner .article-content a,
+#post-inner .article-content a:visited {
+  color: $postLinkColor;
+  font-style: normal;
+  text-decoration: none;
+
+  word-break: break-all;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+#post-inner .article-content a:hover {
+  text-decoration: underline;
+}
+
+/* -------引用-------- */
+#post-inner .article-content blockquote {
+  position: relative;
+
+  border: 1px dotted #c4c7cb;
+
+  /*
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#99ffffff, endcolorstr=#99ffffff))";
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%));
+  */
+  background-color: #f9fafa;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  padding: 30px 30px 20px;
+}
+
+#post-inner .article-content blockquote {
+  font-style: normal;
+}
+
+/* -------区切り線-------- */
+#post-inner .article-content hr {
+  border: 0;
+  height: 1px;
+  background: #dcdcdc;
+  margin-bottom: 36px;
+}
+
+/* ----リスト---- */
+#post-inner .article-content ul {
+  list-style-type: disc;
+  margin-left: 24px;
+
+  padding-bottom: 20px;
+}
+
+#post-inner .article-content ol {
+  list-style-type: decimal;
+  margin-left: 24px;
+
+  padding-bottom: 20px;
+}
+
+#post-inner .article-content ol li,
+#post-inner .article-content ul li {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body.en #post-inner .article-content ol li,
+body.en #post-inner .article-content ul li {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* ----そのた文字---- */
+#post-inner .article-content p.listtitle {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#post-inner .article-content span.font-small,
+#post-inner .article-content p.font-small {
+  font-size: 12px !important;
+  line-height: 24px !important;
+
+  padding-bottom: 20px;
+}
+
+#post-inner .article-content span.font-big,
+#post-inner .article-content p.font-big {
+  font-size: 22px !important;
+  line-height: 28px !important;
+
+  padding-bottom: 20px;
+}
+
+#post-inner .article-content sup,
+#post-inner .article-content sub {
+  font-size: 11px !important;
+  line-height: 18px !important;
+}
+
+/* ----イメージ---- */
+#post-inner .article-content img.alignnone,
+#post-inner .article-content img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#post-inner .article-content img.size-thumbnail,
+#post-inner .article-content img.size-large,
+#post-inner .article-content img.size-full,
+#post-inner .article-content img.size-medium,
+#post-inner .article-content img.aligncenter,
+#post-inner .article-content img.alignnone {
+  /*
+  width: 100% !important;
+  max-width: 570px;
+  height: auto;
+  */
+  max-width: 100%;
+  height: auto;
+
+  margin-bottom: 10px;
+}
+
+#post-inner .article-content blockquote img.size-thumbnail,
+#post-inner .article-content blockquote img.size-large,
+#post-inner .article-content blockquote img.size-full,
+#post-inner .article-content blockquote img.size-medium,
+#post-inner .article-content blockquote img.aligncenter,
+#post-inner .article-content blockquote img.alignnone {
+  /*
+  width: 100% !important;
+  max-width: 570px;
+  height: auto;
+  */
+  max-width: 100%;
+  height: auto;
+}
+
+#post-inner .article-content .wp-caption {
+  // width: auto !important;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#post-inner .article-content blockquote .wp-caption {
+  // width: auto !important;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#post-inner .article-content .wp-caption-text {
+  font-weight: normal;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* ---- code ---- */
+#post-inner .article-content pre {
+  // background: url(../img/post/blog_samplecode.gif);
+  // background-repeat: no-repeat;
+  // background-position: left top;
+
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+  font-size: 11px;
+  color: #080705;
+  line-height: 20px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  padding: 40px 30px;
+  font-style: italic;
+}
+
+/* ---- video ---- */
+#post-inner .article-content .vvqbox {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  width: 100% !important;
+  height: 0 !important;
+  margin: 12px auto 42px;
+  overflow: hidden;
+}
+
+#post-inner .article-content .vvqbox object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  //
+}
+
+@media screen and (max-width: 800px) {
+  #post-inner .article-content p {
+    font-size: 14px;
+    line-height: 28px;
+    padding-bottom: 20px;
+  }
+
+  body.en #post-inner .article-content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  #post-inner .article-content {
+    > table {
+      margin: 0 auto 30px;
+
+      td,
+      th {
+        padding: 3px 3px 3px 10px;
+
+        font-size: 14px;
+        line-height: 26px;
+      }
+
+      td:first-child {
+        padding: 3px 3px 3px 0;
+      }
+    }
+  }
+
+  #post-inner .article-content blockquote > h2,
+  #post-inner .article-content > h2 {
+    font-size: 20px;
+    line-height: 30px;
+
+    border-left: 3px solid $h2HeadColor;
+    padding: 4px 10px 4px 18px;
+
+    margin-bottom: 24px;
+  }
+
+  body.en #post-inner .article-content blockquote > h2,
+  body.en #post-inner .article-content > h2 {
+    font-size: 22px;
+  }
+
+  #post-inner .article-content blockquote > h3,
+  #post-inner .article-content > h3 {
+    font-size: 18px;
+    line-height: 28px;
+
+    border-left: 3px solid $h3HeadColor;
+
+    padding: 2px 10px 2px 18px;
+
+    margin-bottom: 22px;
+  }
+
+  body.en #post-inner .article-content blockquote > h3,
+  body.en #post-inner .article-content > h3 {
+    font-size: 20px;
+  }
+
+  #post-inner .article-content blockquote > h4,
+  #post-inner .article-content > h4 {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  body.en #post-inner .article-content blockquote > h4,
+  body.en #post-inner .article-content > h4 {
+    font-size: 19px;
+  }
+
+  #post-inner .article-content blockquote > h5,
+  #post-inner .article-content > h5 {
+    font-size: 16px;
+    line-height: 28px;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  body.en #post-inner .article-content blockquote > h5,
+  body.en #post-inner .article-content > h5 {
+    font-size: 17px;
+  }
+
+  #post-inner .article-content blockquote > h6,
+  #post-inner .article-content > h6 {
+    font-size: 15px;
+    line-height: 26px;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  body.en #post-inner .article-content blockquote > h6,
+  body.en #post-inner .article-content > h6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #post-inner .article-content > table + h2,
+  #post-inner .article-content > table + h3,
+  #post-inner .article-content > table + h4,
+  #post-inner .article-content > table + h5,
+  #post-inner .article-content > table + h6,
+  #post-inner .article-content > p + h2,
+  #post-inner .article-content > p + h3,
+  #post-inner .article-content > p + h4,
+  #post-inner .article-content > p + h5,
+  #post-inner .article-content > p + h6,
+  #post-inner .article-content > p + p img {
+    margin-top: 10px;
+  }
+
+  #post-inner .article-header,
+  #post-inner .article-content {
+    /*
+    padding-left: 4px;
+    padding-right: 4px;
+    */
+  }
+
+  /*
+  #post-inner .article-content p {
+  font-size: 13px;
+  line-height: 24px;
+  padding-bottom: 16px;
+  }
+  */
+
+  body.en #post-inner .article-content p {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 16px;
+  }
+
+  #post-inner .article-content blockquote > h2,
+  #post-inner .article-content > h2 {
+    font-size: 18px;
+    line-height: 28px;
+
+    border-left: 3px solid $h2HeadColor;
+    padding: 4px 10px 4px 22px;
+
+    margin-bottom: 20px;
+    margin-left: -25px;
+  }
+
+  body.en #post-inner .article-content blockquote > h2,
+  body.en #post-inner .article-content > h2 {
+    font-size: 19px;
+  }
+
+  #post-inner .article-content blockquote > h3,
+  #post-inner .article-content > h3 {
+    font-size: 17px;
+    line-height: 27px;
+
+    border-left: 3px solid $h3HeadColor;
+
+    padding: 2px 10px 2px 22px;
+
+    margin-bottom: 20px;
+    margin-left: -25px;
+  }
+
+  body.en #post-inner .article-content blockquote > h3,
+  body.en #post-inner .article-content > h3 {
+    font-size: 18px;
+  }
+
+  #post-inner .article-content blockquote > h4,
+  #post-inner .article-content > h4 {
+    font-size: 16px;
+    line-height: 26px;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  body.en #post-inner .article-content blockquote > h4,
+  body.en #post-inner .article-content > h4 {
+    font-size: 17px;
+  }
+
+  #post-inner .article-content blockquote > h5,
+  #post-inner .article-content > h5 {
+    font-size: 15px;
+    line-height: 26px;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  body.en #post-inner .article-content blockquote > h5,
+  body.en #post-inner .article-content > h5 {
+    font-size: 16px;
+  }
+
+  #post-inner .article-content blockquote > h6,
+  #post-inner .article-content > h6 {
+    font-size: 14px;
+    line-height: 26px;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  body.en #post-inner .article-content blockquote > h6,
+  body.en #post-inner .article-content > h6 {
+    font-size: 15px;
+  }
+
+  #post-inner .article-content blockquote {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    padding: 15px 25px 5px;
+
+    margin-left: 0;
+    // margin-right: 0;
+
+    > p {
+      font-size: 13px;
+    }
+  }
+
+  #post-inner .article-content blockquote {
+    margin-left: -25px;
+    margin-right: -25px;
+
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #post-inner .article-content blockquote:before {
+    /*
+    content: url("../img/post/blog_inyo_s.png");
+    position: absolute;
+    left: 10px;
+    top: -12px;
+    */
+  }
+
+  #post-inner .article-content ul {
+    padding-bottom: 20px;
+  }
+
+  #post-inner .article-content ol {
+    padding-bottom: 20px;
+  }
+
+  #post-inner .article-content ol li,
+  #post-inner .article-content ul li {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  body.en #post-inner .article-content ol li,
+  body.en #post-inner .article-content ul li {
+    font-size: 14px;
+  }
+
+  #post-inner .article-content p.listtitle {
+    padding-bottom: 8px;
+  }
+
+  #post-inner .article-content span.font-small,
+  #post-inner .article-content p.font-small {
+    font-size: 12px !important;
+    line-height: 24px !important;
+
+    padding-bottom: 20px;
+  }
+
+  #post-inner .article-content span.font-big,
+  #post-inner .article-content p.font-big {
+    font-size: 18px !important;
+    line-height: 26px !important;
+
+    padding-bottom: 20px;
+  }
+
+  #post-inner .article-content sup,
+  #post-inner .article-content sub {
+    font-size: 11px !important;
+    line-height: 16px !important;
+  }
+
+  #post-inner .article-content .wp-caption-text {
+    font-weight: normal;
+    font-size: 11px !important;
+    line-height: 18px !important;
+    margin-top: 5px;
+    padding-bottom: 24px;
+  }
+
+  #post-inner #hubspot-head .hbspt-block,
+  #post-inner #hubspot-head .hbspt-block {
+    padding: 20px 10px 10px;
+  }
+
+  #post-inner #hubspot-head .hbspt-block .cta-btn,
+  #post-inner #hubspot-head .hbspt-block .cta-btn {
+    background: 0;
+    padding: 0 10px 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #post-inner .article-content blockquote > h2,
+  #post-inner .article-content > h2 {
+    margin-left: -20px;
+  }
+
+  #post-inner .article-content blockquote > h3,
+  #post-inner .article-content > h3 {
+    margin-left: -20px;
+  }
+
+  #post-inner .article-content blockquote {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+/* mod
+-------------- */
+
+@media screen and (max-width: 600px) {
+  #post-inner .article-content {
+    > table.hubsynch-com {
+      td,
+      th {
+        display: block;
+      }
+    }
+  }
+}
