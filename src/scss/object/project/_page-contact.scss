@@ -498,6 +498,16 @@ body.en #page-inner.contact {
 /* ------------------------------------------------------------
   mautic form style
 ------------------------------------------------------------ */
+#contact-wrap form label {
+  font-family: 'Poppins', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif !important;
+  color: #101010 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  margin-bottom: 0 !important;
+  font-weight: 400 !important;
+  padding-left: 3px !important;
+}
+
 .mauticform_wrapper {
   max-width: 100% !important;
   margin: 0 auto !important;
@@ -535,8 +545,42 @@ body.en #page-inner.contact {
 #contact-wrap input[type="tel"],
 #contact-wrap input[type="color"],
 #contact-wrap .uneditable-input {
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all .2s;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 50px !important;
+  padding: 0 15px !important;
   background-color: #f9fafa !important;
   font-size: 14px;
+  line-height: 24px;
+
+  -webkit-appearance: none;
+  outline: none;
+}
+
+#contact-wrap select,
+#contact-wrap textarea,
+#contact-wrap input[type=text],
+#contact-wrap input[type=password],
+#contact-wrap input[type=datetime],
+#contact-wrap input[type=datetime-local],
+#contact-wrap input[type=date],
+#contact-wrap input[type=month],
+#contact-wrap input[type=time],
+#contact-wrap input[type=week],
+#contact-wrap input[type=number],
+#contact-wrap input[type=email],
+#contact-wrap input[type=url],
+#contact-wrap input[type=search],
+#contact-wrap input[type=tel],
+#contact-wrap input[type=color],
+#contact-wrap .uneditable-input {
+  margin-top: 9px !important;
+  margin-bottom: 5px !important;
 }
 
 #contact-wrap .mauticform_wrapper select {
@@ -548,6 +592,7 @@ body.en #page-inner.contact {
   height: auto !important;
   min-height: 200px;
   resize: vertical;
+  padding: 10px 15px !important;
 }
 
 #contact-wrap .mauticform-button-wrapper {
@@ -737,6 +782,30 @@ body.en #page-inner.contact {
 }
 
 @media screen and (max-width: 600px) {
+  #contact-wrap form label {
+    font-size: 13px !important;
+  }
+
+  #contact-wrap textarea,
+  #contact-wrap input[type="text"],
+  #contact-wrap input[type="password"],
+  #contact-wrap input[type="datetime"],
+  #contact-wrap input[type="datetime-local"],
+  #contact-wrap input[type="date"],
+  #contact-wrap input[type="month"],
+  #contact-wrap input[type="time"],
+  #contact-wrap input[type="week"],
+  #contact-wrap input[type="number"],
+  #contact-wrap input[type="email"],
+  #contact-wrap input[type="url"],
+  #contact-wrap input[type="search"],
+  #contact-wrap input[type="tel"],
+  #contact-wrap input[type="color"],
+  #contact-wrap .uneditable-input {
+    height: 40px !important;
+    font-size: 13px;
+  }
+
   #page-inner.contact {
     #contact-wrap.contact-thanks {
       padding: 0 10px;

@@ -128,7 +128,7 @@ const createConfig = async () => {
       }]
     },
     plugins: [
-      // new StyleLintPlugin(),
+      new StyleLintPlugin(),
       new ExtractTextPlugin('assets/css/bundle.css'),
       new webpack.optimize.UglifyJsPlugin({
         sourceMap: true
@@ -142,8 +142,8 @@ const createConfig = async () => {
       }]),
       new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
-        chunks: ['top', 'archive'],
-      }),
+        chunks: ['top', 'archive']
+      })
     ].concat(arr),
     resolve: {
       extensions: ['.js']
